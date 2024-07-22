@@ -1,15 +1,32 @@
+import { Routes, Route } from "react-router-dom";
+import { Home } from "../../pages/Home";
+import { Contacts } from "../../pages/Contacts";
+import { Basket } from "../../pages/Basket";
 import { FC } from "react";
-import css from "./App.module.css";
 import { Header } from "../header/Header";
-import { Footer } from "../footer/Footer";
-import { Products } from "../products/Products";
 
 export const App: FC = () => {
 	return (
-		<div className={css.wrapper}>
+		<>
 			<Header />
-			<Products />
-			<Footer />
-		</div>
+			<Routes>
+				<Route
+					path="/"
+					Component={Home}
+				/>
+				<Route
+					path="/contacts"
+					Component={Contacts}
+				/>
+				<Route
+					path="/basket"
+					Component={Basket}
+				/>
+				<Route
+					path="*"
+					Component={Home}
+				/>
+			</Routes>
+		</>
 	);
 };
