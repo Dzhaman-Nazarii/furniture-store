@@ -1,9 +1,17 @@
+.header_menu {
+	display: flex;
+	align-items: center;
+	margin: 0 30px 0 30px;
+	justify-content: space-between;
+}
+
 .header_logo {
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 40px;
 }
 
 .header_list {
+	font-size: 25px;
 	float: right;
 	list-style: none;
 }
@@ -37,7 +45,7 @@
 	top: 15px;
 	left: 50px;
 	width: 400px;
-	font-size: 40px;
+	font-size: 43px;
 	font-weight: 600;
 	color: #fff;
 }
@@ -45,10 +53,10 @@
 .header_presentation::before {
 	content: 'at low prices';
 	position: absolute;
-	top: 120px;
+	top: 125px;
 	left: 50px;
 	width: 300px;
-	font-size: 15px;
+	font-size: 25px;
 	font-weight: 300;
 	color: #fff;
 }
