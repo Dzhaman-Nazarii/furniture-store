@@ -16,6 +16,8 @@
 }
 
 .header_link {
+	color: #2d2d2d;
+	font-weight: 640000;
 	text-decoration: none;
 	display: inline;
 	margin-left: 25px;
@@ -33,7 +35,7 @@
 	width: 100%;
 	height: 500px;
 	background-size: cover;
-	background-position: center center;
+	background-position: 40% 60%;
 	background-blend-mode: multiply;
 	background-color: #bcbcbc;
 	position: relative;
@@ -47,7 +49,7 @@
 	width: 400px;
 	font-size: 43px;
 	font-weight: 600;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.668);
 }
 
 .header_presentation::before {
@@ -58,5 +60,5 @@
 	width: 300px;
 	font-size: 25px;
 	font-weight: 300;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.668);
 }

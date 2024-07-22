@@ -4,6 +4,7 @@ import { Contacts } from "../../pages/Contacts";
 import { Basket } from "../../pages/Basket";
 import { FC } from "react";
 import { Header } from "../header/Header";
+import { Footer } from "../footer/Footer";
 
 export const App: FC = () => {
 	return (
@@ -27,6 +28,7 @@ export const App: FC = () => {
 					Component={Home}
 				/>
 			</Routes>
+			<Footer />
 		</>
 	);
 };
