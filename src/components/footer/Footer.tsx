@@ -1,8 +1,8 @@
 import { FC } from "react";
 import css from "./Footer.module.css";
-import instagramSvg from '../../img/instagram.svg';
-import telegramSvg from '../../img/telegram.svg';
-import facebookSvg from '../../img/facebook.svg'
+import instagramSvg from "../../img/instagram.svg";
+import telegramSvg from "../../img/telegram.svg";
+import facebookSvg from "../../img/facebook.svg";
 
 export const Footer: FC = () => {
 	return (
@@ -10,31 +10,36 @@ export const Footer: FC = () => {
 			<div className={css.footer_top}>
 				<div className={css.footer_container}>
 					<div className={css.footer_colummn}>
-						<h3 className={css.footer_title}>Information</h3>
+						<h3 className={css.footer_title}>Company</h3>
 						<nav className={css.footer_nav}>
 							<ul className={css.footer_list}>
-								<li className={css.footer_item}></li>
 								<li className={css.footer_item}>About us</li>
-								<li className={css.footer_item}>For buyers</li>
-								<li className={css.footer_item}>Blog</li>
+								<li className={css.footer_item}>Partners</li>
+								<li className={css.footer_item}>
+									Question/Answer
+								</li>
+								<li className={css.footer_item}>News</li>
+								<li className={css.footer_item}>Reviews</li>
+								<li className={css.footer_item}>Contacts</li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 				<div className={css.footer_container}>
 					<div className={css.footer_colummn}>
-						<h3 className={css.footer_title}>Сustomer</h3>
+						<h3 className={css.footer_title}>Information</h3>
 						<nav className={css.footer_nav}>
 							<ul className={css.footer_list}>
 								<li className={css.footer_item}>
-									Delivery and payment
+									Exchange and return
 								</li>
 								<li className={css.footer_item}>
-									Furniture to order
+									Privacy Policy
 								</li>
-								<li className={css.footer_item}>
-									Warranty and returns
-								</li>
+								<li className={css.footer_item}>Advantages</li>
+								<li className={css.footer_item}>Delivery</li>
+								<li className={css.footer_item}>Guarantees</li>
+								<li className={css.footer_item}>Payment</li>
 							</ul>
 						</nav>
 					</div>
@@ -61,23 +66,32 @@ export const Footer: FC = () => {
 									</a>
 								</li>
 							</ul>
-              <ul className={css.footer_social}>
-                <li className={css.footer_app}>
-                  <a href="https://www.instagram.com/dzhaman_1119/">
-                    <img src={instagramSvg} alt="instagram" />
-                  </a>
-                </li>
-                <li className={css.footer_app}>
-                  <a href="https://t.me/dzhaman_1119">
-                    <img src={telegramSvg} alt="telegram" />
-                  </a>
-                </li>
-                <li className={css.footer_app}>
-                  <a href="https://t.me/dzhaman_1119">
-                    <img src={facebookSvg} alt="facebook" />
-                  </a>
-                </li>
-              </ul>
+							<ul className={css.footer_social}>
+								<li className={css.footer_app}>
+									<a href="https://www.instagram.com/dzhaman_1119/">
+										<img
+											src={instagramSvg}
+											alt="instagram"
+										/>
+									</a>
+								</li>
+								<li className={css.footer_app}>
+									<a href="https://t.me/dzhaman_1119">
+										<img
+											src={telegramSvg}
+											alt="telegram"
+										/>
+									</a>
+								</li>
+								<li className={css.footer_app}>
+									<a href="https://t.me/dzhaman_1119">
+										<img
+											src={facebookSvg}
+											alt="facebook"
+										/>
+									</a>
+								</li>
+							</ul>
 						</nav>
 					</div>
 				</div>

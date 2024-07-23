@@ -2,11 +2,12 @@
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	gap: 1px;
 }
 
 .products_item {
-	width: 30%;
+	width: 20%;
 	margin-bottom: 50px;
 	background: #f5f5f5;
 	border-radius: 0 0 10px 10px;
