@@ -5,28 +5,35 @@
 	justify-content: space-between;
 }
 
+.header_logotype {
+	margin-left: 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header_title {
+	color: #5F5F61;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 45px;
+}
+
 .header_logo {
-	font-weight: 600;
-	font-size: 40px;
+	width: 38px;
+	height: 38px;
 }
 
 .header_nav {
+	padding-top: 7px;
 	font-size: 25px;
 	float: right;
 }
 
-.header_link {
-	color: #2d2d2d;
-	font-weight: 640000;
-	text-decoration: none;
-	display: inline;
-	margin-left: 25px;
-	cursor: pointer;
-	transition: opacity 500ms ease;
-}
-
-.header_item:hover {
-	opacity: 0.5;
+.header_icon {
+	margin-right: 20px;
+	width: 40px;
+	height: 40px;
 }
 
 .header_presentation {

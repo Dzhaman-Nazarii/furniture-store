@@ -1,0 +1,29 @@
+.search_container {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .search_input {
+	width: 600px;
+	height: 50px;
+	border-radius: 30px;
+	padding-left: 20px;
+	font-size: 18px;
+	border: none;
+	background: #f2f0f0;
+	color: #4e4e4e;
+  }
+
+  .search_input:active {
+	border: none;
+  }
+  
+  .search_icon {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+  }

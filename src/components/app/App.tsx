@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../../pages/Home";
-import { Contacts } from "../../pages/Contacts";
+import { Favourite } from "../../pages/Favourite";
 import { Basket } from "../../pages/Basket";
 import { FC } from "react";
 import { Header } from "../header/Header";
 import { Footer } from "../footer/Footer";
+import { Profile } from "../../pages/Profile";
 
 export const App: FC = () => {
 	return (
@@ -12,12 +13,12 @@ export const App: FC = () => {
 			<Header />
 			<Routes>
 				<Route
-					path="/"
-					Component={Home}
+					path="/favourite"
+					Component={Favourite}
 				/>
 				<Route
-					path="/contacts"
-					Component={Contacts}
+					path="/profile"
+					Component={Profile}
 				/>
 				<Route
 					path="/basket"

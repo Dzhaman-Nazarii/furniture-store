@@ -1,7 +1,7 @@
-import React from 'react'
+import { FC } from 'react'
 
-export const Basket = () => {
+export const Basket: FC = () => {
   return (
-	<div>Basket</div>
+	  <h1>Basket</h1>
   )
 }

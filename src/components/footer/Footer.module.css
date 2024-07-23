@@ -1,13 +1,13 @@
 .footer {
 	background: #2d2d2d;
-    padding: 56px 0 43px;
+    padding: 40px 0 20px;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer_top {
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 15px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -15,17 +15,14 @@
 
 .footer_colummn {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 38px 59px;
-    position: relative;
 }
 
 .footer_title {
-	font-weight: 400;
-    font-size: 34px;
-    line-height: 19px;
+	font-weight: 600;
+    font-size: 24px;
     color: #e0e0e0;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .footer_nav {
@@ -39,40 +36,39 @@
 
 .footer_item {
 	cursor: pointer;
-	font-size: 30px;
+	font-size: 18px;
 	margin-bottom: 10px;
 	color: rgba(255, 255, 255, 0.5);
 }
 
 .footer_phone, .footer_mail {
 	text-decoration: none;
-    font-size: 30px;
+    font-size: 18px;
     padding-bottom: 10px;
     color: rgba(255, 255, 255, 0.5);
 }
 
 .footer_social {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .footer_app {
-    width: 60px;
+    width: 30px;
 }
 
 .footer_bottom {
     display: flex;
     align-items: center;
-    padding: 21px 0 19px;
+    padding: 10px 0 10px;
 	align-items: center;
 	justify-content: center;
 }
 
 .footer_copy {
-	font-size: 32px;
-    line-height: 180%;
+	font-size: 18px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #ffffff80;
-    margin-bottom: 0;
+    margin: 10px 0;
 }
