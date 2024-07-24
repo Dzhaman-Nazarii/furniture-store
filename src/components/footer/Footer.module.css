@@ -1,20 +1,9 @@
-.footer {
-	background: #2d2d2d;
-    padding: 40px 0 20px;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .footer_top {
 	margin: 0 auto;
 	padding: 0 15px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-
-.footer_colummn {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+	justify-content: space-between;
 }
 
 .footer_title {

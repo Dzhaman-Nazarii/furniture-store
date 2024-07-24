@@ -9,8 +9,7 @@ import logoImg from "../../img/logo.png";
 
 export const Header: FC = () => {
 	return (
-		<header>
-			<div className={css.header_menu}>
+		<div className={css.header_content}>
 				<div className={css.header_logotype}>
 					<img
 						className={css.header_logo}
@@ -55,8 +54,6 @@ export const Header: FC = () => {
 						/>
 					</Link>
 				</nav>
-			</div>
-			<div className={css.header_presentation}></div>
-		</header>
+		</div>
 	);
 };

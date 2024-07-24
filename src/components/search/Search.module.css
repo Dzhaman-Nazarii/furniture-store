@@ -4,13 +4,13 @@
   }
   
   .search_input {
-	width: 600px;
+	width: 400px;
 	height: 50px;
 	border-radius: 30px;
 	padding-left: 20px;
 	font-size: 18px;
 	border: none;
-	background: #f2f0f0;
+	background: #ffffff;
 	color: #4e4e4e;
   }
 
