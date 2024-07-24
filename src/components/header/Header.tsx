@@ -6,6 +6,7 @@ import { Search } from "../search/Search";
 import profileSvg from "../../img/profile.svg";
 import favouriteSvg from "../../img/favourite.svg";
 import logoImg from "../../img/logo.png";
+import { Catalogue } from "../catalogue/Catalogue";
 
 export const Header: FC = () => {
 	return (
@@ -22,6 +23,7 @@ export const Header: FC = () => {
 						ouse Staff{" "}
 					</Link>
 				</div>
+				<Catalogue/>
 				<Search />
 				<nav className={css.header_nav}>
 					<Link
