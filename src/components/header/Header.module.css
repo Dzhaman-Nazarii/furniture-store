@@ -1,8 +1,8 @@
 .header_content {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .header_logotype {
