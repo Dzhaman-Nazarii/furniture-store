@@ -1,10 +1,10 @@
 import { FC } from "react";
 import css from "./Header.module.css";
 import { Link } from "react-router-dom";
-import basketSvg from "../../img/basket.svg";
+import basketSvg from "../../svg/basket.svg";
 import { Search } from "../search/Search";
-import profileSvg from "../../img/profile.svg";
-import favouriteSvg from "../../img/favourite.svg";
+import profileSvg from "../../svg/profile.svg"
+import favouriteSvg from "../../svg/favourite.svg"
 import logoImg from "../../img/logo.png";
 import { Catalogue } from "../catalogue/Catalogue";
 
@@ -23,7 +23,7 @@ export const Header: FC = () => {
 						ouse Staff{" "}
 					</Link>
 				</div>
-				<Catalogue/>
+				<Catalogue />
 				<Search />
 				<nav className={css.header_nav}>
 					<Link

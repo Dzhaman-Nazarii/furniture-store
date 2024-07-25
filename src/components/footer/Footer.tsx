@@ -1,8 +1,8 @@
 import { FC } from "react";
 import css from "./Footer.module.css";
-import instagramSvg from "../../img/instagram.svg";
-import telegramSvg from "../../img/telegram.svg";
-import facebookSvg from "../../img/facebook.svg";
+import instagramSvg from "../../svg/instagram.svg";
+import telegramSvg from "../../svg/telegram.svg";
+import facebookSvg from "../../svg/facebook.svg";
 
 export const Footer: FC = () => {
 	return (

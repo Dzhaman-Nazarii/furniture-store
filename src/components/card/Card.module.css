@@ -1,6 +1,18 @@
+.card_photo {
+	position: relative;
+}
+
 .card_img {
 	width: 100%;
 	border-radius: 10px 10px 0 0;
+}
+
+.card_heart {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 10px;
+	right: 10px;
 }
 
 .card_container {

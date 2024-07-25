@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import css from './Search.module.css';
-import searchSvg from '../../img/search.svg';
+import searchSvg from '../../svg/search.svg';
 
 export const Search: FC = () => {
   return (

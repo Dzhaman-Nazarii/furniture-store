@@ -42,7 +42,7 @@
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	background: url('../../img/catalogue.svg') no-repeat center center;
+	background: url('../../svg/catalogue.svg') no-repeat center center;
 	background-size: contain;
   }
   
