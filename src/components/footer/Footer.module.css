@@ -38,12 +38,23 @@
 }
 
 .footer_social {
+	display: flex;
+}
+
+.footer_apps {
     display: flex;
-    gap: 10px;
+	flex-direction: column;
+    gap: 5px;
+	margin-right: 35px;
 }
 
 .footer_app {
     width: 30px;
+}
+
+.footer_logotype {
+	width: 200px;
+	height: 110px;
 }
 
 .footer_bottom {

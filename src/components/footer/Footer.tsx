@@ -3,6 +3,8 @@ import css from "./Footer.module.css";
 import instagramSvg from "../../svg/instagram.svg";
 import telegramSvg from "../../svg/telegram.svg";
 import facebookSvg from "../../svg/facebook.svg";
+import logotypeImg from "../../img/logotype.png";
+import { Link } from "react-router-dom";
 
 export const Footer: FC = () => {
 	return (
@@ -57,32 +59,41 @@ export const Footer: FC = () => {
 								</a>
 							</li>
 						</ul>
-						<ul className={css.footer_social}>
-							<li className={css.footer_app}>
-								<a href="https://www.instagram.com/dzhaman_1119/">
-									<img
-										src={instagramSvg}
-										alt="instagram"
-									/>
-								</a>
-							</li>
-							<li className={css.footer_app}>
-								<a href="https://t.me/dzhaman_1119">
-									<img
-										src={telegramSvg}
-										alt="telegram"
-									/>
-								</a>
-							</li>
-							<li className={css.footer_app}>
-								<a href="https://t.me/dzhaman_1119">
-									<img
-										src={facebookSvg}
-										alt="facebook"
-									/>
-								</a>
-							</li>
-						</ul>
+						<div className={css.footer_social}>
+							<ul className={css.footer_apps}>
+								<li className={css.footer_app}>
+									<a href="https://www.instagram.com/dzhaman_1119/" target="_blank ">
+										<img
+											src={instagramSvg}
+											alt="instagram"
+										/>
+									</a>
+								</li>
+								<li className={css.footer_app}>
+									<a href="https://t.me/dzhaman_1119" target="_blank ">
+										<img
+											src={telegramSvg}
+											alt="telegram"
+										/>
+									</a>
+								</li>
+								<li className={css.footer_app}>
+									<a href="https://www.facebook.com/share/vadB5d1aGgwSpQPA/?mibextid=LQQJ4d" target="_blank ">
+										<img
+											src={facebookSvg}
+											alt="facebook"
+										/>
+									</a>
+								</li>
+							</ul>
+							<Link to={"/"}>
+								<img
+									className={css.footer_logotype}
+									src={logotypeImg}
+									alt="logotype"
+								/>
+							</Link>
+						</div>
 					</nav>
 				</div>
 			</div>
