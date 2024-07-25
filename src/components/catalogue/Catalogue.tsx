@@ -44,25 +44,25 @@ export const Catalogue: FC = () => {
             </div>
             <div className={`${css.dropdown_menu} ${isOpen ? css.open : ""}`}>
                 <ul>
-                    <li className={css.catalogue_item}>Chair
+                    <li className={css.catalogue_item}>Chairs
                         <img src={chairSvg} alt="chair" className={css.catalogue_img} />
                     </li>
-                    <li className={css.catalogue_item}>Bed
+                    <li className={css.catalogue_item}>Beds
                         <img src={bedSvg} alt="bed" className={css.catalogue_img} />
                     </li>
-                    <li className={css.catalogue_item}>Sofa
+                    <li className={css.catalogue_item}>Sofas
                         <img src={sofaSvg} alt="sofa" className={css.catalogue_img} />
                     </li>
-                    <li className={css.catalogue_item}>Table
+                    <li className={css.catalogue_item}>Tables
                         <img src={tableSvg} alt="table" className={css.catalogue_img} />
                     </li>
-                    <li className={css.catalogue_item}>Wardrobe
+                    <li className={css.catalogue_item}>Wardrobes
                         <img src={wardrobeSvg} alt="wardrobe" className={css.catalogue_img} />
                     </li>
-                    <li className={css.catalogue_item}>Lamp
+                    <li className={css.catalogue_item}>Lamps
                         <img src={lampSvg} alt="lamp" className={css.catalogue_img} />
                     </li>
-                    <li className={css.catalogue_item}>Mirror
+                    <li className={css.catalogue_item}>Mirrors
                         <img src={mirrroSvg} alt="mirror" className={css.catalogue_img} />
                     </li>
                 </ul>
