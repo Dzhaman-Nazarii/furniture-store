@@ -2,7 +2,9 @@ import { FC, MouseEventHandler } from "react";
 import { IProduct } from "../../products";
 import css from "./Card.module.css";
 import heartSvg from "../../svg/heart.svg";
-import basketSvg from "../../svg/basket.svg";
+import heartActiveSvg from '../../svg/heartActive.svg';
+import addToBasketSvg from '../../svg/addToBasket.svg';
+import removeFromBasketSvg from '../../svg/removeFromBasket.svg';
 import { useFavourites } from "../../context/FavouritesContext";
 import { useBasket } from "../../context/BasketContext";
 
@@ -45,13 +47,12 @@ export const Card: FC<CardProps> = ({ id, title, img, desc, price, isFavourite, 
           </li>
           <li className={css.card_icon} onClick={handleFavouriteClick}>
             <img
-              src={heartSvg}
+              src={isFavourite ? heartActiveSvg : heartSvg}
               alt="heart"
-              className={isFavourite ? css.favourite_active : css.favourite_inactive}
             />
           </li>
           <li className={css.card_icon} onClick={handleBasketClick}>
-            <img src={basketSvg} alt="basket" className={isBasket ? css.basket_active : css.basket_inactive} />
+            <img src={isBasket ? removeFromBasketSvg : addToBasketSvg} alt="basket"/>
           </li>
         </ul>
       </div>
