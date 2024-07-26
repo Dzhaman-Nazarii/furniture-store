@@ -1,7 +1,34 @@
-import { FC } from 'react'
+import { FC } from "react";
+import css from "./Basket.module.css";
+import { useBasket } from "../../context/BasketContext";
+import { IProduct } from "../../products";
+import { Card } from "../../components/card/Card";
 
 export const Basket: FC = () => {
-  return (
-	  <h1>Basket</h1>
-  )
-}
+	const { basket } = useBasket();
+	return (
+		<div>
+			<h1>Basket</h1>
+			{basket.length === 0 ? (
+				<p>Absent</p>
+			) : (
+				<ul className={css.basket_list}>
+					{basket.map((product: IProduct) => (
+						<li
+							key={product.id}
+							className={css.basket_item}>
+							<Card
+								id={product.id}
+								title={product.title}
+								img={product.img}
+								desc={product.desc}
+								price={product.price}
+								isBasket={true}
+							/>
+						</li>
+					))}
+				</ul>
+			)}
+		</div>
+	);
+};
