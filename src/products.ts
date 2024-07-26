@@ -5,7 +5,7 @@ import tableImg from './img/table.jpeg';
 import blackSofaImg from './img/black-sofa.jpeg';
 import whiteSofaImg from './img/white-sofa.jpeg';
 
-export interface IData {
+export interface IProduct {
 	id: number;
 	title: string;
 	img: string;
@@ -13,7 +13,7 @@ export interface IData {
 	price: number;
 }
 
-export const data: IData[] = [
+export const products: IProduct[] = [
 	{
 		id: 1,
 		title: "Grey chair",

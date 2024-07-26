@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { IData } from "../../data";
+import { IProduct } from "../../products";
 import css from "./Card.module.css";
 import heartSvg from "../../svg/heart.svg";
 import basketSvg from "../../svg/basket.svg";
 
-export const Card: FC<IData> = ({ title, img, desc, price }) => {
+export const Card: FC<IProduct> = ({ title, img, desc, price }) => {
 	return (
 		<>
 			<img
