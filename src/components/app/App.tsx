@@ -1,12 +1,12 @@
 import css from "./App.module.css";
 import { Routes, Route } from "react-router-dom";
-import { Home } from "../../pages/Home";
+import { Home } from "../../pages/home/Home";
 import { Favourite } from "../../pages/favourite/Favourite";
-import { Basket } from "../../pages/Basket";
+import { Basket } from "../../pages/basket/Basket";
 import { FC } from "react";
 import { Header } from "../header/Header";
 import { Footer } from "../footer/Footer";
-import { Profile } from "../../pages/Profile";
+import { Profile } from "../../pages/profile/Profile";
 import { FavouritesProvider } from "../../context/FavouritesContext";
 
 export const App: FC = () => {
