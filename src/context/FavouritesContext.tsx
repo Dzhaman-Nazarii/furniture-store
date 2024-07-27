@@ -4,7 +4,7 @@ import { IProduct } from "../products";
 interface IFavouritesContextType {
   favourites: IProduct[];
   addFavourite: (product: IProduct) => void;
-  removeFavourite: (productId: number) => void;
+  removeFavourite: (productId: string) => void;
 }
 
 const FavouritesContext = createContext<IFavouritesContextType | undefined>(undefined);
@@ -16,7 +16,7 @@ export const FavouritesProvider: FC<{ children: ReactNode }> = ({ children }) =>
     setFavourites((prevFavourites) => [...prevFavourites, product]);
   };
 
-  const removeFavourite = (productId: number) => {
+  const removeFavourite = (productId: string) => {
     setFavourites((prevFavourites) =>
       prevFavourites.filter((item) => item.id !== productId)
     );

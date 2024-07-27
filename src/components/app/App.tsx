@@ -9,6 +9,7 @@ import { Footer } from "../footer/Footer";
 import { Profile } from "../../pages/profile/Profile";
 import { FavouritesProvider } from "../../context/FavouritesContext";
 import { BasketProvider } from "../../context/BasketContext";
+import { ProductDetails } from "../productDetalis/ProductDetails";
 
 export const App: FC = () => {
 	return (
@@ -33,6 +34,10 @@ export const App: FC = () => {
 							<Route
 								path="/basket"
 								Component={Basket}
+							/>
+							<Route
+								path="/product/:productId"
+								Component={ProductDetails}
 							/>
 							<Route
 								path="*"
