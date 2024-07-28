@@ -20,8 +20,10 @@ export const Favourite: FC = () => {
                 id={product.id}
                 title={product.title}
                 img={product.img}
-                desc={product.desc}
                 price={product.price}
+                width={product.width}
+                height={product.height}
+                depth={product.depth}
                 isFavourite={true}
               />
             </li>

@@ -25,8 +25,19 @@
 }
 
 .card_price {
-	font-size: 20px;
+	font-size: 24px;
 	color: #5fa36a;
+}
+
+.card_sizes {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card_dimension {
+	display: flex;
+	flex-direction: column;
 }
 
 .card_basket {
