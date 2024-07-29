@@ -24,7 +24,7 @@ export const Basket: FC = () => {
 								price={product.price}
 								width={product.width}
 								height={product.height}
-								depth={product.depth}
+								length={product.length}
 								isBasket={true}
 							/>
 						</li>

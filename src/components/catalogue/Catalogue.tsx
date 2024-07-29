@@ -4,8 +4,7 @@ import chairSvg from '../../svg/chair.svg';
 import bedSvg from '../../svg/bed.svg';
 import tableSvg from '../../svg/table.svg'
 import sofaSvg from '../../svg/sofa.svg';
-import mirrroSvg from '../../svg/mirror.svg';
-import lampSvg from '../../svg/lamp.svg';
+import dresserSvg from '../../svg/dresser.svg';
 import wardrobeSvg from '../../svg/wardrobe.svg';
 
 export const Catalogue: FC = () => {
@@ -59,11 +58,8 @@ export const Catalogue: FC = () => {
                     <li className={css.catalogue_item}>Wardrobes
                         <img src={wardrobeSvg} alt="wardrobe" className={css.catalogue_img} />
                     </li>
-                    <li className={css.catalogue_item}>Lamps
-                        <img src={lampSvg} alt="lamp" className={css.catalogue_img} />
-                    </li>
-                    <li className={css.catalogue_item}>Mirrors
-                        <img src={mirrroSvg} alt="mirror" className={css.catalogue_img} />
+                    <li className={css.catalogue_item}>Dressers
+                        <img src={dresserSvg} alt="dresser" className={css.catalogue_img} />
                     </li>
                 </ul>
             </div>

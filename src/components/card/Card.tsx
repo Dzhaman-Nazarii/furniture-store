@@ -20,7 +20,7 @@ export const Card: FC<CardProps> = ({
 	price,
 	width,
 	height,
-	depth,
+	length,
 	isFavourite,
 	isBasket,
 }) => {
@@ -32,7 +32,7 @@ export const Card: FC<CardProps> = ({
 		if (isFavourite) {
 			removeFavourite(id);
 		} else {
-			addFavourite({ id, title, img, price, width, height, depth });
+			addFavourite({ id, title, img, price, width, height, length });
 		}
 	};
 
@@ -41,7 +41,7 @@ export const Card: FC<CardProps> = ({
 		if (isBasket) {
 			removeFromBasket(id);
 		} else {
-			addToBasket({ id, title, img, price, width, height, depth });
+			addToBasket({ id, title, img, price, width, height, length });
 		}
 	};
 
@@ -64,8 +64,8 @@ export const Card: FC<CardProps> = ({
 						<span>{height}.0cm</span>
 					</div>
 					<div className={css.card_dimension}>
-						<span>Depth</span>
-						<span>{depth}.0cm</span>
+						<span>Length</span>
+						<span>{length}.0cm</span>
 					</div>
 				</div>
 				<ul className={css.card_icons}>

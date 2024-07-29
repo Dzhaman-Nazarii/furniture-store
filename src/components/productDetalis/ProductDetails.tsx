@@ -34,8 +34,8 @@ export const ProductDetails: React.FC = () => {
 							<span>{product.height}.0cm</span>
 						</div>
 						<div className={css.details_dimension}>
-							<b>Depth:</b>
-							<span>{product.depth}.0cm</span>
+							<b>Length:</b>
+							<span>{product.length}.0cm</span>
 						</div>
 					</div>
 					<p><b>Factory:</b> House Staff</p>
