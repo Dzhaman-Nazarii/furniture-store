@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Card } from "../card/Card";
+import { Card } from "../../components/card/Card";
 import { products } from "../../products";
 import css from "./Products.module.css";
 import { useFavourites } from "../../context/FavouritesContext";

@@ -9,7 +9,7 @@ import { Footer } from "../footer/Footer";
 import { Profile } from "../../pages/profile/Profile";
 import { FavouritesProvider } from "../../context/FavouritesContext";
 import { BasketProvider } from "../../context/BasketContext";
-import { ProductDetails } from "../productDetalis/ProductDetails";
+import { ProductDetails } from "../../pages/productDetalis/ProductDetails";
 
 export const App: FC = () => {
 	return (
@@ -23,26 +23,11 @@ export const App: FC = () => {
 					</header>
 					<main className={css.app_main}>
 						<Routes>
-							<Route
-								path="/favourite"
-								Component={Favourite}
-							/>
-							<Route
-								path="/profile"
-								Component={Profile}
-							/>
-							<Route
-								path="/basket"
-								Component={Basket}
-							/>
-							<Route
-								path="/product/:productId"
-								Component={ProductDetails}
-							/>
-							<Route
-								path="*"
-								Component={Home}
-							/>
+							<Route path="/favourite" element={<Favourite />} />
+							<Route path="/profile" element={<Profile />} />
+							<Route path="/basket" element={<Basket />} />
+							<Route path="/product/:productId" element={<ProductDetails />} />
+							<Route path="*" element={<Home />} />
 						</Routes>
 					</main>
 					<footer className={css.app_footer}>
