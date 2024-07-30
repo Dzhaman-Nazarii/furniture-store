@@ -5,6 +5,7 @@ interface IFavouritesContextType {
   favourites: IProduct[];
   addFavourite: (product: IProduct) => void;
   removeFavourite: (productId: string) => void;
+  getFavouriteCount: () => number;
 }
 
 const FavouritesContext = createContext<IFavouritesContextType | undefined>(undefined);
@@ -22,8 +23,12 @@ export const FavouritesProvider: FC<{ children: ReactNode }> = ({ children }) =>
     );
   };
 
+  const getFavouriteCount = () => {
+    return favourites.length;
+  }
+
   return (
-    <FavouritesContext.Provider value={{ favourites, addFavourite, removeFavourite }}>
+    <FavouritesContext.Provider value={{ favourites, addFavourite, removeFavourite, getFavouriteCount }}>
       {children}
     </FavouritesContext.Provider>
   );

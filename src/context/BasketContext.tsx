@@ -4,7 +4,8 @@ import { IProduct } from "../products";
 interface IBasketContextType {
 	basket: IProduct[];
 	addToBasket: (product: IProduct) => void;
-	removeFromBasket: (productId: string) => void
+	removeFromBasket: (productId: string) => void;
+	getBasketCount: () => number;
 }
 
 const BasketContext = createContext<IBasketContextType | undefined>(undefined);
@@ -21,8 +22,12 @@ export const BasketProvider: FC<{children: ReactNode}> = ({children}) => {
 			prevBasket.filter((item) => item.id !== productId))
 	}
 
+	const getBasketCount = () => {
+		return basket.length;
+	  };
+
 	return (
-		<BasketContext.Provider value={{basket, addToBasket, removeFromBasket}}>
+		<BasketContext.Provider value={{basket, addToBasket, removeFromBasket, getBasketCount}}>
 			{children}
 		</BasketContext.Provider>
 	)

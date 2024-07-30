@@ -48,3 +48,24 @@
 .header_icon:hover {
 	transform: scale(1.1);
 }
+
+.header_icon_container {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+}
+
+.header_count {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+}
