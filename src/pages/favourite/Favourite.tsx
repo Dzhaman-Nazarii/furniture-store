@@ -9,9 +9,8 @@ export const Favourite: FC = () => {
 
   return (
     <div>
-      <h1>Favourite</h1>
       {favourites.length === 0 ? (
-        <p>Absent</p>
+        <h1 className={css.favourites_title}>Your favourite list is empty. Add some products to it!</h1>
       ) : (
         <ul className={css.favourites_list}>
           {favourites.map((product: IProduct) => (

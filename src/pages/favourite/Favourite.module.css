@@ -1,3 +1,9 @@
+.favourites_title {
+	padding-top: 200px;
+	padding-bottom: 250px;
+	text-align: center;
+}
+
 .favourites_list {
 	width: 100%;
 	display: flex;

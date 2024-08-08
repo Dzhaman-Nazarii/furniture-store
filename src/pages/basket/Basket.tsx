@@ -8,9 +8,8 @@ export const Basket: FC = () => {
 	const { basket } = useBasket();
 	return (
 		<div>
-			<h1>Basket</h1>
 			{basket.length === 0 ? (
-				<p>Absent</p>
+				<h1 className={css.basket_title}>Your basket is empty. Add some products to it!</h1>
 			) : (
 				<ul className={css.basket_list}>
 					{basket.map((product: IProduct) => (
