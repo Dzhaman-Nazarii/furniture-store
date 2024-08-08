@@ -14,12 +14,24 @@ export const Footer: FC = () => {
 					<h3 className={css.footer_title}>Company</h3>
 					<nav className={css.footer_nav}>
 						<ul className={css.footer_list}>
-							<li className={css.footer_item}>About us</li>
-							<li className={css.footer_item}>Partners</li>
-							<li className={css.footer_item}>Question/Answer</li>
-							<li className={css.footer_item}>News</li>
-							<li className={css.footer_item}>Reviews</li>
-							<li className={css.footer_item}>Contacts</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/about">About us</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/partners">Partners</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/faq">Question/Answer</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/news">News</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/reviews">Reviews</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/contacts">Contacts</Link>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -28,13 +40,25 @@ export const Footer: FC = () => {
 					<nav className={css.footer_nav}>
 						<ul className={css.footer_list}>
 							<li className={css.footer_item}>
-								Exchange and return
+								<Link className={css.footer_link} to="/exchange-return">
+									Exchange and return
+								</Link>
 							</li>
-							<li className={css.footer_item}>Privacy Policy</li>
-							<li className={css.footer_item}>Advantages</li>
-							<li className={css.footer_item}>Delivery</li>
-							<li className={css.footer_item}>Guarantees</li>
-							<li className={css.footer_item}>Payment</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/privacy-policy">Privacy Policy</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/advantages">Advantages</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/delivery">Delivery</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/guarantees">Guarantees</Link>
+							</li>
+							<li className={css.footer_item}>
+								<Link className={css.footer_link} to="/payment">Payment</Link>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -62,7 +86,10 @@ export const Footer: FC = () => {
 						<div className={css.footer_social}>
 							<ul className={css.footer_apps}>
 								<li className={css.footer_app}>
-									<a href="https://www.instagram.com/dzhaman_1119/" target="_blank ">
+									<a
+										href="https://www.instagram.com/dzhaman_1119/"
+										target="_blank"
+										rel="noopener noreferrer">
 										<img
 											src={instagramSvg}
 											alt="instagram"
@@ -70,7 +97,10 @@ export const Footer: FC = () => {
 									</a>
 								</li>
 								<li className={css.footer_app}>
-									<a href="https://t.me/dzhaman_1119" target="_blank ">
+									<a
+										href="https://t.me/dzhaman_1119"
+										target="_blank"
+										rel="noopener noreferrer">
 										<img
 											src={telegramSvg}
 											alt="telegram"
@@ -78,7 +108,10 @@ export const Footer: FC = () => {
 									</a>
 								</li>
 								<li className={css.footer_app}>
-									<a href="https://www.facebook.com/share/vadB5d1aGgwSpQPA/?mibextid=LQQJ4d" target="_blank ">
+									<a
+										href="https://www.facebook.com/share/vadB5d1aGgwSpQPA/?mibextid=LQQJ4d"
+										target="_blank"
+										rel="noopener noreferrer">
 										<img
 											src={facebookSvg}
 											alt="facebook"

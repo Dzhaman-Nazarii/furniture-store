@@ -11,6 +11,8 @@ import { FavouritesProvider } from "../../context/FavouritesContext";
 import { BasketProvider } from "../../context/BasketContext";
 import { ProductDetails } from "../../pages/productDetalis/ProductDetails";
 import { SearchProvider } from "../../context/SearchContext";
+import { ExchangeAndReturn } from "../../pages/exchangeAndReturn/ExchangeAndReturn";
+import { About } from "../../pages/about/About";
 
 export const App: FC = () => {
 	return (
@@ -29,6 +31,8 @@ export const App: FC = () => {
 				  <Route path="/profile" element={<Profile />} />
 				  <Route path="/basket" element={<Basket />} />
 				  <Route path="/product/:productId" element={<ProductDetails />} />
+				  <Route path="/about" element={<About/>} />
+				  <Route path="/exchange-return" element={<ExchangeAndReturn />} />
 				  <Route path="*" element={<Home />} />
 				</Routes>
 			  </main>
