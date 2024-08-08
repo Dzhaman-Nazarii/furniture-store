@@ -10,33 +10,36 @@ import { Profile } from "../../pages/profile/Profile";
 import { FavouritesProvider } from "../../context/FavouritesContext";
 import { BasketProvider } from "../../context/BasketContext";
 import { ProductDetails } from "../../pages/productDetalis/ProductDetails";
+import { SearchProvider } from "../../context/SearchContext";
 
 export const App: FC = () => {
 	return (
-		<BasketProvider>
-			<FavouritesProvider>
-				<div className={css.app_wrapper}>
-					<header className={css.app_header}>
-						<div className={css.app_header_content}>
-							<Header />
-						</div>
-					</header>
-					<main className={css.app_main}>
-						<Routes>
-							<Route path="/favourite" element={<Favourite />} />
-							<Route path="/profile" element={<Profile />} />
-							<Route path="/basket" element={<Basket />} />
-							<Route path="/product/:productId" element={<ProductDetails />} />
-							<Route path="*" element={<Home />} />
-						</Routes>
-					</main>
-					<footer className={css.app_footer}>
-						<div className={css.app_footer_content}>
-							<Footer />
-						</div>
-					</footer>
+	  <BasketProvider>
+		<FavouritesProvider>
+		  <SearchProvider>
+			<div className={css.app_wrapper}>
+			  <header className={css.app_header}>
+				<div className={css.app_header_content}>
+				  <Header />
 				</div>
-			</FavouritesProvider>
-		</BasketProvider>
+			  </header>
+			  <main className={css.app_main}>
+				<Routes>
+				  <Route path="/favourite" element={<Favourite />} />
+				  <Route path="/profile" element={<Profile />} />
+				  <Route path="/basket" element={<Basket />} />
+				  <Route path="/product/:productId" element={<ProductDetails />} />
+				  <Route path="*" element={<Home />} />
+				</Routes>
+			  </main>
+			  <footer className={css.app_footer}>
+				<div className={css.app_footer_content}>
+				  <Footer />
+				</div>
+			  </footer>
+			</div>
+		  </SearchProvider>
+		</FavouritesProvider>
+	  </BasketProvider>
 	);
-};
+  };
