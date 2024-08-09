@@ -5,7 +5,6 @@ import basketSvg from "../../svg/basket.svg";
 import { Search } from "../search/Search";
 import profileSvg from "../../svg/profile.svg";
 import favouriteSvg from "../../svg/favourite.svg";
-import logoImg from "../../img/logo.png";
 import { Catalogue } from "../catalogue/Catalogue";
 import { useBasket } from "../../context/BasketContext";
 import { useFavourites } from "../../context/FavouritesContext";
@@ -19,11 +18,6 @@ export const Header: FC = () => {
 	return (
 		<div className={css.header_content}>
 			<div className={css.header_logotype}>
-				<img
-					className={css.header_logo}
-					src={logoImg}
-					alt="logo"
-				/>
 				<Link
 					to="/"
 					className={css.header_title}>

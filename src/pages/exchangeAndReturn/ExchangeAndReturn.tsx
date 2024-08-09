@@ -94,6 +94,50 @@ export const ExchangeAndReturn: FC = () => {
 					</li>
 				</ol>
 			</div>
+			<div className={css.exchange_conditions}>
+				<h2 className={css.exchange_conditions_title}>
+					Special return and exchange conditions
+				</h2>
+				<ul className={css.exchange_conditions_list}>
+					<li className={css.exchange_conditions_item}>
+						When returning funds to the Buyer's payment cards, funds
+						may be delayed by the bank. The date of refund is
+						considered the date of withdrawal of funds from the
+						seller's current account in favor of the buyer;
+					</li>
+					<li className={css.exchange_conditions_item}>
+						The conditions of exchange and return do not apply to
+						orders paid by legal entities by cashless payment, to
+						wholesale orders and purchases for the purpose of
+						resale;
+					</li>
+					<li className={css.exchange_conditions_item}>
+						Payments for additional services for orders, such as
+						lifting to the floor, skidding, assembly, etc. are not
+						subject to return;
+					</li>
+					<li className={css.exchange_conditions_item}>
+						In the case when a gift was added to the product, the
+						gift must also have a commercial form and must be
+						transferred together with the product;
+					</li>
+					<li className={css.exchange_conditions_item}>
+						The delivery of the product, in case of its return, is
+						carried out by the Buyer at his own expense to the place
+						indicated by the seller of such product after filling
+						out the refund form. The risk of keeping the goods until
+						the moment of handing over to the seller is borne by the
+						buyer;
+					</li>
+					<li className={css.exchange_conditions_item}>
+						If the verification of the completeness of the Product
+						and its appearance requires additional examinations or
+						analyzes in a period exceeding 7 working days, the
+						refund to the buyer is made after the actual completion
+						of the verification procedures in a longer period;
+					</li>
+				</ul>
+			</div>
 		</>
 	);
 };

@@ -2,6 +2,7 @@
 	margin-top: 10px;
 	font-size: 40px;
 	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .exchange_box {
@@ -76,7 +77,34 @@
 }
 
 .exchange_failed_item {
-	list-style: auto;
+	list-style: square;
 	font-weight: bold;
 	margin-top: 20px;
+}
+
+.exchange_conditions {
+	width: 100%;
+	padding-left: 65px;
+	padding-right: 65px;
+	margin-bottom: 50px;
+}
+
+.exchange_conditions_title {
+	font-size: 36px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.exchange_conditions_list {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    gap: 10px;
+}
+
+.exchange_conditions_item {
+	max-width: 550px;
+    list-style: circle;
+    font-weight: bold;
+    margin-top: 20px;
 }
